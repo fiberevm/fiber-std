@@ -1,0 +1,3 @@
+[submodule "fiber-std/lib/forge-std"]
+	path = fiber-std/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std

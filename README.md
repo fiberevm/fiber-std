@@ -14,13 +14,13 @@ Add `fiber-std=lib/fiber-std/src/` to `remappings.txt`
 
 ## Examples
 
-### ERC20
+### Create a new token
 
 ```solidity
-import {ERC20} from "fiber-std/ERC20.sol";
+import {Token} from "fiber-std/Token.sol";
 
-contract MyToken is ERC20 {
-    constructor() ERC20("MyToken", "MTK") {
+contract MyToken is Token {
+    constructor() Token("MyToken", "MTK") {
         _mint(msg.sender, 1000000 * 10 ** decimals());
     }
 }
